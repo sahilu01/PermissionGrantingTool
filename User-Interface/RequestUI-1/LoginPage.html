@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Request Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/requestStyle.css" /> 
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./js/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="./js/login.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+</head>
+
+<body class="colorpart" >
+    <div class="container center-block requestdiv" style="width:650px">
+        <div class="jumbotron">
+            <!-- <form action="/action_page.php"> -->
+                <h2 class="text-center">LogIn Page</h2>
+                <br>
+                <div class="form-group">
+                    <label for="empId">Employee ID:</label>
+                    <input type="text" class="form-control" id="empId">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                
+                <button type="submit" onclick="transferData();"  class="btn btn-default btn-lg btn-success center-block"><a href="approverScreen.html">LogIn</a></button>
+            <!-- </form> -->
+            </br>
+            <p id="demo"></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Request Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/requestStyle.css" /> 
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./js/jquery-ui.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="./js/requestScript.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+</head>
+
+<body class="colorpart">
+
+    <div class="container center-block requestdiv" style="width:650px">
+        <div class="jumbotron">
+            <!-- <form action="/action_page.php"> -->
+                <h2 class="text-center">File Request Portal</h2>
+                <br>
+                <div align = "right">
+                        <span><button onclick="myFunction();">Check Permissions</button></span><br>
+                        <span> Responses Recorded :    </span><span id = "permissions">0</span>
+                    </div>
+                <div class="form-group">
+                    <label for="id">Employee Id:</label>
+                    <input type="text" class="form-control" id="id">
+                </div>
+                <div class="form-group">
+                    <label for="fileName">File Name:</label>
+                    <input type="text" class="form-control" id="fileName">
+                </div>
+            
+                <div class="inlineb">
+                <button type="submit" onclick="postrequest();"  class="btn btn-default btn-lg btn-success center-block" id = "submitButton">Submit</button><br>
+                </div>
+            
+                <div class = "inlineb" id="reasonButton">
+                        
+                </div>
+            
+                <div class="inlineb">
+                <a id="filePath" href="error.txt" download ><img border="0" src="Download-Icon.png" alt="W3Schools" width="50" height="50"></a>
+                </div>
+            </br>
+        </br>
+    </br>
+</br>
+                <div id = "spinner" class="" align ="center"></div>
+                <p id="message" align = "center" style="font-size:25px;font-style:sans-serif"></p>
+
+        </div>
+    </div>
+            <!-- </form> -->
+           
+</body>
+
+</html>
